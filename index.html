@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <div class="container">
+        <h1>Income Tracker</h1>
+        <div class="income-container">
+            <div class="form-container">
+                <input type="text" id="income-description" placeholder="Description" name="description">
+                <input type="number" id="income-amount" placeholder="Amount" name="amount" value="0">
+                <button id="income-button">Add Income</button>
+            </div>
+            <table id="income-table">
+                <thead>
+                    <td>Description</td>
+                    <td>Amount</td>
+                </thead>
+                <tbody id="income-table-body"></tbody>
+            </table>   
+            <div class="total-income">
+                <p>Total Income: ₹<span id="totalIncome">0.00</span></p>
+            </div>
+            <div class="remaining-amount"></div>
+                <p>Remaining Amount: ₹<span id="remainingAmount">0.00</span></p>
+            </div>
+
+            <div class="expense-container">
+                <div class="expense-form">
+                    <h1>Expense Tracker</h1>
+                    <div class="form-container">
+                        <input type="text" id="expense-name" placeholder="Expense Name">
+                        <input type="number" id="expense-amount" placeholder="Expense Amount">
+                        <select id="expense-category">
+                            <option value="" disabled selected>Select category</option>
+                            <option value="food">Food</option>
+                            <option value="transport">Transport</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <button type="submit">Add Expense</button>
+                    </div>
+                    <table id="expense-table">
+                        <thead>
+                            <tr>
+                                <th>Expense Name</th>
+                                <th>Amount</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody id="expense-table-body"></tbody>
+                    </table>
+
+                    <div class="total-expense">
+                        <p>Total Expense: ₹<span id="totalExpense">0.00</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- <script href="index.js"></script> -->
+    <script src="index.js"></script>
+</body>
+</html>

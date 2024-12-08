@@ -1,0 +1,212 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: skyblue;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+   width: 80%;
+   max-width: 1200px;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: antiquewhite;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgb(0,0,0,0.1);
+
+}
+
+h1{
+   text-align: center;
+   color: blueviolet;
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+}
+h2 {
+   margin-top: 40px;
+   text-align: center;
+   color: blueviolet
+}
+.income-container{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.form-container{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   max-width: 600px;
+   margin-bottom: 30px;
+   
+}
+.form-container input{
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 45%;
+}
+.form-container-button{
+   padding: 10px 20px;
+   font-size: 1 rem;
+   background-color: aqua;
+   color: whitesmoke;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 20%;
+   transition: background-color 0.3s ease;
+}
+.form-container button:hover{
+   background-color: greenyellow;
+}
+/* table-style */
+#income-table{
+   text-align: left;
+   width: 100%;
+   margin-top: 20px;
+   border-collapse: collapse;
+}
+#income-table thead td{
+   font-weight: bold;
+   padding: 12px;
+   background-color: blue;
+   color: blanchedalmond;
+}
+#income-table tbody td{
+   padding: 12px;
+   border-bottom: 1px solid lightgrey;
+}
+
+.total-container {
+   margin-top: 20px;
+   text-align: right;
+   font-size: 18px;
+   font-weight: bold;
+
+}
+
+/* expense style */
+/* Expense container styles */
+.expense-container {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.expense-container h2 {
+   margin-top: 40px;
+   text-align: center;
+   color: blueviolet
+}
+.expense-form .form-container {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   max-width: 1000px;
+   margin-bottom: 30px;
+}
+.expense-form input[type="text"],
+.expense-form input[type="number"],
+.expense-form select {
+   padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 45%;
+ 
+}
+.expense-form button {
+   padding: 10px 20px;
+   font-size: 1 rem;
+   background-color: aqua;
+   color: whitesmoke;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 20%;
+   transition: background-color 0.3s ease;
+}
+.expense-form button:hover {
+   background-color: greenyellow;
+}
+#expense-table {
+   text-align: left;
+   width: 100%;
+   margin-top: 20px;
+   border-collapse: collapse;
+}
+#expense-table thead {
+   background-color: blue;
+   color: blanchedalmond;
+}
+
+#expense-table thead th {
+  
+   padding: 12px;
+   text-align: left;
+   font-weight: bold;
+}
+#expense-table tbody td {
+   padding: 12px;
+   border-bottom: 1px solid lightgrey;
+}
+
+/* Income and Expense sections */
+.total-income, .total-expense {
+   background-color: #f4f4f4; 
+   border-radius: 12px;
+   padding: 15px;
+   margin-top: 20px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.total-income p, .total-expense p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+.total-income span, .total-expense span {
+   font-size: 24px;
+   font-weight: bold;
+
+}
+.total-income {
+   border-left: 5px solid #00a859; 
+}
+
+.total-expense {
+   border-left: 5px solid #ff5733; 
+}
+total-income span, .total-expense span {
+   color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+   .form-container {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .form-container input, .form-container button {
+       width: 90%;
+       margin-bottom: 10px;
+   }
+
+   #income-table thead td {
+       font-size: 0.9rem;
+   }
+
+   #income-table tbody td {
+       font-size: 0.9rem;
+   }
+
+}
